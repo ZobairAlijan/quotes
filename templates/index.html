@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        <a href="{{url_for('quotes')}}" class="btn btn-primary">Add a quote</a>
+    </nav>
+    <div class="jumbotron">
+        <h2>Favorite quotes</h2>
+    </div>
+
+      <table class="table table-bordered table-dark table-hover">
+        <thead>
+           
+          <tr>
+            <th scope="col">Author Name</th>
+            <th scope="col">Author Quote</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for r in result %}
+          <tr>
+            <td>{{r.author}}</td>
+            <td>{{r.quote}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+        
+      </table>
+</body>
+</html>

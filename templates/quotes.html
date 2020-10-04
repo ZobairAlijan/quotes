@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+
+    <div class="container">
+        <form action="/process" method="POST">
+            <div class="form-group">
+                <label for="author">Quote Author</label>
+                <input type="text" id="inputName" name="author" class="form-control" placeholder="Add quote">
+            </div>
+            <div class="form-group">
+                <label for="quote">Quote</label>
+                <textarea  id="quote" cols="30" rows="5" name="quote" class="form-control" placeholder="Add your text"></textarea>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit your quote</button>
+        </form>
+    </div>
+</body>
+</html>
